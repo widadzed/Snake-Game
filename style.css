@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0D053C;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  #game-board {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #444;
+    background: linear-gradient(145deg, #3d3d3d, #242424);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
+  #game-board::before {
+    content: "";
+    background-image: url('mclogo.png'); 
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; 
+    background-color: rgba(255, 255, 255, 0.1); 
+  }
+  
+  
+  
+  .snake {
+    width: 20px;
+    height: 20px;
+    background-color: #61dafb;
+    position: absolute;
+  }
+  
+  .food {
+    width: 20px;
+    height: 20px;
+    background-color: #0D053C;
+    position: absolute;
+  }
+  
+  .scoreboard {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #61dafb;
+  }
+  
